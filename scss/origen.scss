@@ -1,0 +1,163 @@
+@import "codigocss";
+.body {
+    font-family: 'Markazi Text', serif;
+    background-color: #fae6a5;
+}
+
+.body__galeria {
+    text-align: center;
+    padding: 30px;
+}
+
+.body--fondo {
+    background-color: #fae6a5;
+}
+
+.header {
+    background-color: #fae6a5;
+    width: 100%;
+    height: 150px;
+}
+
+.header__h1 h1 {
+    color: #1f0246;
+}
+
+.header__divDos {
+    grid-area: menu;
+}
+
+.footer {
+    background-color: lightblue;
+    margin-top: opx;
+}
+
+.footer__div1 {
+    grid-area: portada;
+}
+
+.footer__pie {
+    height: 30vh;
+    margin-left: 300px;
+}
+
+.footer--anime {
+    animation-name: anima;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+.menu {
+    color: seashell;
+}
+
+.menu__ul {
+    margin: 10px;
+    padding-left: 50px;
+    list-style-type: circle;
+}
+
+.menu--ul--menuNavegacion {
+    display: inline-block;
+    font-size: 30px;
+    margin-left: 100px;
+    margin-right: 10px;
+    padding: 3px 3px 3px 3px;
+    position: relative;
+    list-style: none;
+    justify-content: center;
+}
+
+.h3 {
+    justify-content: center
+}
+
+.h3__ul {
+    justify-content: center
+}
+
+.h3--textoMarron {
+    color: #152c5e;
+}
+
+.section {
+    justify-content: center
+}
+
+.section--flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-flow: wrap;
+    align-items: center;
+    padding: 20px;
+}
+
+.section__img {
+    width: 700px;
+}
+
+.nav {
+    justify-content: center
+}
+
+.nav__ul {
+    justify-content: center
+}
+
+.nav--menu {
+    color: seashell;
+}
+
+.main {
+    color: seashell;
+}
+
+.main__div {
+    grid-area: portada;
+}
+
+.main__img {
+    width: 700px;
+}
+
+$ancho: 720px;
+@for $Tit from 1 to 6 {
+    h#{$Tit} {
+        font-size: 3rem/$Tit;
+    }
+    .col-#{$Tit} {
+        width: $ancho/$Tit;
+    }
+}
+
+@each $secciones in body,
+header,
+main,
+footer {
+    #{$secciones} {
+        background-position: center;
+    }
+}
+
+$colores: ( facebook: blue, whatsapp: green, instagram: pink);
+@each $nombres,
+$color in $colores {
+    .btn-#{$nombres} {
+        background-color: $color;
+    }
+}
+
+.redsocial {
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+    margin: 5px;
+}
+
+.redsocial--dos {
+    @extend .redsocial;
+    border-radius: 0;
+}

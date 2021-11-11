@@ -1,0 +1,469 @@
+* {
+    margin: 0;
+    margin-top: 0;
+}
+
+body {
+    font-family: 'Markazi Text', serif;
+    background-color: #fae6a5;
+}
+
+header {
+    background-color: #fae6a5;
+    width: 100%;
+    height: 150px;
+}
+
+h1 {
+    color: #1f0246;
+}
+
+h2 {
+    color: #18077a;
+}
+
+.textoMarron {
+    color: #152c5e;
+}
+
+.bordesRedondeados {
+    border-radius: 10px;
+}
+
+.textoVerde {
+    color: #1d1c5c;
+}
+
+.textoCeleste {
+    color: steelblue;
+}
+
+.cursiva {
+    font-style: oblique;
+    width: 200px;
+    text-align: center;
+    margin-right: 50px;
+    margin-left: 500px;
+    background-color: #e7d794;
+    padding: 60px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border-style: groove;
+}
+
+.box {
+    font-style: oblique;
+    width: 400px;
+    text-align: center;
+    margin-right: 50px;
+    margin-left: 400px;
+    background-color: #e7d794;
+    padding: 60px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.fondo {
+    background-color: #fae6a5;
+}
+
+.textoClaro {
+    color: #faeebe;
+}
+
+.textoGrande {
+    font-size: 60px;
+}
+
+.centrar {
+    text-align: center;
+}
+
+.posicion {
+    position: fixed;
+}
+
+.menuNavegacion {
+    display: inline-block;
+    font-size: 30px;
+    margin-left: 100px;
+    margin-right: 10px;
+    padding: 3px 3px 3px 3px;
+    position: relative;
+    list-style: none;
+    justify-content: center;
+}
+
+ul ul {
+    position: absolute;
+    display: none;
+}
+
+ul ul li {
+    display: block;
+}
+
+ul li:hover ul {
+    display: block;
+    font-size: 20px;
+    padding-left: 0px;
+}
+
+.menu :hover {
+    color: seashell;
+}
+
+ul {
+    margin: 10px;
+    padding-left: 50px;
+    list-style-type: circle;
+}
+
+.galeria {
+    text-align: center;
+    padding: 30px;
+}
+
+.imagen {
+    width: 500px;
+    border-radius: 30px;
+}
+
+.imagen2 {
+    width: 700px;
+}
+
+.centrar {
+    text-align: center;
+}
+
+.fondoClaro {
+    background-color: seashell;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-flow: wrap;
+    align-items: center;
+    padding: 20px;
+}
+
+footer {
+    background-color: lightblue;
+    margin-top: opx;
+}
+
+.conteiner {
+    display: grid;
+    grid-template-areas: "portada" "menu" "galeria" "video" "info" "info2";
+}
+
+.divUno {
+    grid-area: portada;
+}
+
+.divDos {
+    grid-area: menu;
+}
+
+.divTres {
+    grid-area: galeria;
+    background-color: lightblue;
+}
+
+.divCuatro {
+    grid-area: video;
+}
+
+.divCinco {
+    grid-area: info;
+}
+
+.divseis {
+    grid-area: info2;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.pie {
+    height: 30vh;
+    margin-left: 300px;
+}
+
+.div1 {
+    margin: 5px;
+}
+
+@media (min-width: 600px) and (max-weidth: 1023px) {
+    .galeria {
+        background-color: #cc2121;
+        text-align: center;
+        padding: 30px;
+        display: grid;
+    }
+}
+
+@media (max-width: 599px) {
+    .galeria {
+        background-color: #0e0d0a;
+        text-align: center;
+        padding: 30px;
+        display: grid;
+    }
+}
+
+.grad-lineal {
+    background-image: linear-gradient(to bottom right, #82a3fd, #f8e693);
+}
+
+.grad-lineal2 {
+    background-image: linear-gradient(#fae6a5, #4f8d9c);
+}
+
+.grad-lineal3 {
+    background-image: linear-gradient(#4f8d9c 80%, #fae6a5);
+}
+
+.grad-lineal4 {
+    background-image: linear-gradient(#fae6a5 70%, #4f8d9c);
+}
+
+.trans {
+    transition: width 1s, height 1s;
+}
+
+.trans:hover {
+    width: 750px;
+    height: 750px;
+}
+
+.animame {
+    animation-name: anima;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+@keyframes anima {
+    0% {}
+    30% {
+        transform: translatex 8%;
+    }
+    50% {
+        transform: translatex(5%);
+    }
+    80% {
+        transform: translatex 8%;
+    }
+    100% {
+        transform: translatex 5%;
+    }
+}
+
+.body {
+    font-family: 'Markazi Text', serif;
+    background-color: #fae6a5;
+}
+
+.body__galeria {
+    text-align: center;
+    padding: 30px;
+}
+
+.body--fondo {
+    background-color: #fae6a5;
+}
+
+.header {
+    background-color: #fae6a5;
+    width: 100%;
+    height: 150px;
+}
+
+.header__h1 h1 {
+    color: #1f0246;
+}
+
+.header__divDos {
+    grid-area: menu;
+}
+
+.footer {
+    background-color: lightblue;
+    margin-top: opx;
+}
+
+.footer__div1 {
+    grid-area: portada;
+}
+
+.footer__pie {
+    height: 30vh;
+    margin-left: 300px;
+}
+
+.footer--anime {
+    animation-name: anima;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+.menu {
+    color: seashell;
+}
+
+.menu__ul {
+    margin: 10px;
+    padding-left: 50px;
+    list-style-type: circle;
+}
+
+.menu--ul--menuNavegacion {
+    display: inline-block;
+    font-size: 30px;
+    margin-left: 100px;
+    margin-right: 10px;
+    padding: 3px 3px 3px 3px;
+    position: relative;
+    list-style: none;
+    justify-content: center;
+}
+
+.h3 {
+    justify-content: center;
+}
+
+.h3__ul {
+    justify-content: center;
+}
+
+.h3--textoMarron {
+    color: #152c5e;
+}
+
+.section {
+    justify-content: center;
+}
+
+.section--flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-flow: wrap;
+    align-items: center;
+    padding: 20px;
+}
+
+.section__img {
+    width: 700px;
+}
+
+.nav {
+    justify-content: center;
+}
+
+.nav__ul {
+    justify-content: center;
+}
+
+.nav--menu {
+    color: seashell;
+}
+
+.main {
+    color: seashell;
+}
+
+.main__div {
+    grid-area: portada;
+}
+
+.main__img {
+    width: 700px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.col-1 {
+    width: 720px;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+.col-2 {
+    width: 360px;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+.col-3 {
+    width: 240px;
+}
+
+h4 {
+    font-size: 0.75rem;
+}
+
+.col-4 {
+    width: 180px;
+}
+
+h5 {
+    font-size: 0.6rem;
+}
+
+.col-5 {
+    width: 144px;
+}
+
+body {
+    background-position: center;
+}
+
+header {
+    background-position: center;
+}
+
+main {
+    background-position: center;
+}
+
+footer {
+    background-position: center;
+}
+
+.btn-facebook {
+    background-color: blue;
+}
+
+.btn-whatsapp {
+    background-color: green;
+}
+
+.btn-instagram {
+    background-color: pink;
+}
+
+.redsocial,
+.redsocial--dos {
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+    margin: 5px;
+}
+
+.redsocial--dos {
+    border-radius: 0;
+}

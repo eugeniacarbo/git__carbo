@@ -1,0 +1,263 @@
+        * {
+            margin: 0;
+            margin-top: 0;
+        }
+        
+        body {
+            font-family: 'Markazi Text', serif;
+            background-color: rgb(250, 230, 165);
+        }
+        
+        header {
+            background-color: rgb(250, 230, 165);
+            width: 100%;
+            height: 150px;
+        }
+        
+        h1 {
+            color: rgb(31, 2, 70);
+        }
+        
+        h2 {
+            color: rgb(24, 7, 122);
+        }
+        
+        .textoMarron {
+            color: rgb(21, 44, 94);
+        }
+        
+        .bordesRedondeados {
+            border-radius: 10px
+        }
+        
+        .textoVerde {
+            color: rgb(29, 28, 92);
+        }
+        
+        .textoCeleste {
+            color: steelblue;
+        }
+        
+        .cursiva {
+            font-style: oblique;
+            width: 200px;
+            text-align: center;
+            margin-right: 50px;
+            margin-left: 500px;
+            background-color: rgb(231, 215, 148);
+            padding: 60px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-style: groove;
+        }
+        
+        .box {
+            font-style: oblique;
+            width: 400px;
+            text-align: center;
+            margin-right: 50px;
+            margin-left: 400px;
+            background-color: rgb(231, 215, 148);
+            padding: 60px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .fondo {
+            background-color: rgb(250, 230, 165);
+        }
+        
+        .textoClaro {
+            color: rgb(250, 238, 190);
+        }
+        
+        .textoGrande {
+            font-size: 60px;
+        }
+        
+        .centrar {
+            text-align: center;
+        }
+        
+        .posicion {
+            position: fixed;
+        }
+        
+        .menuNavegacion {
+            display: inline-block;
+            font-size: 30px;
+            margin-left: 100px;
+            margin-right: 10px;
+            padding: 3px 3px 3px 3px;
+            position: relative;
+            list-style: none;
+            justify-content: center;
+        }
+        
+        ul ul {
+            position: absolute;
+            display: none;
+        }
+        
+        ul ul li {
+            display: block;
+        }
+        
+        ul li:hover ul {
+            display: block;
+            font-size: 20px;
+            padding-left: 0px;
+        }
+        
+        .menu :hover {
+            color: seashell;
+        }
+        
+        ul {
+            margin: 10px;
+            padding-left: 50px;
+            list-style-type: circle;
+        }
+        
+        .galeria {
+            text-align: center;
+            padding: 30px;
+        }
+        
+        .imagen {
+            width: 500px;
+            border-radius: 30px;
+        }
+        
+        .imagen2 {
+            width: 700px;
+        }
+        
+        .centrar {
+            text-align: center;
+        }
+        
+        .fondoClaro {
+            background-color: seashell;
+        }
+        
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-flow: wrap;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        footer {
+            background-color: lightblue;
+            margin-top: opx;
+        }
+        
+        .conteiner {
+            display: grid;
+            grid-template-areas: "portada" "menu" "galeria" "video" "info" "info2";
+        }
+        
+        .divUno {
+            grid-area: portada;
+        }
+        
+        .divDos {
+            grid-area: menu;
+        }
+        
+        .divTres {
+            grid-area: galeria;
+            background-color: lightblue;
+        }
+        
+        .divCuatro {
+            grid-area: video;
+        }
+        
+        .divCinco {
+            grid-area: info;
+        }
+        
+        .divseis {
+            grid-area: info2;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        
+        .pie {
+            height: 30vh;
+            margin-left: 300px;
+        }
+        
+        .div1 {
+            margin: 5px;
+        }
+        
+        @media (min-width: 600px) and (max-weidth: 1023px) {
+            .galeria {
+                background-color: rgb(204, 33, 33);
+                text-align: center;
+                padding: 30px;
+            }
+        }
+        
+        @media (max-width: 599px) {
+            .galeria {
+                background-color: rgb(14, 13, 10);
+                text-align: center;
+                padding: 30px;
+            }
+        }
+        
+        .grad-lineal {
+            background-image: linear-gradient( to bottom right, rgb(130, 163, 253), rgb(248, 230, 147));
+        }
+        
+        .grad-lineal2 {
+            background-image: linear-gradient( rgb(250, 230, 165), rgb(79, 141, 156));
+        }
+        
+        .grad-lineal3 {
+            background-image: linear-gradient( rgb(79, 141, 156) 80%, rgb(250, 230, 165));
+        }
+        
+        .grad-lineal4 {
+            background-image: linear-gradient( rgb(250, 230, 165) 70%, rgb(79, 141, 156));
+        }
+        
+        .trans {
+            transition: width 1s, height 1s;
+        }
+        
+        .trans:hover {
+            width: 750px;
+            height: 750px;
+        }
+        
+        .animame {
+            animation-name: anima;
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+        }
+        
+        @keyframes anima {
+            0% {}
+            30% {
+                transform: translatex (8%);
+            }
+            50% {
+                transform: translatex( 5%);
+            }
+            80% {
+                transform: translatex (8%);
+            }
+            100% {
+                transform: translatex (5%);
+            }
+        }

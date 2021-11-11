@@ -1,0 +1,2 @@
+[1110/180544.429:ERROR:crash_report_database_win.cc(563)] CreateDirectory C:\Program Files (x86)\temp\reports: Acceso denegado. (0x5)
+[1110/180544.804:ERROR:crash_report_database_win.cc(563)] CreateDirectory C:\Program Files (x86)\temp\reports: Acceso denegado. (0x5)
